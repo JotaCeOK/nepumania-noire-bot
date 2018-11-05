@@ -11,5 +11,7 @@ client.on('message', message => {
   	}
 });
 
+bot.user.setPresence({ game: { name: 'nameGoesHere', type: 0 } });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
